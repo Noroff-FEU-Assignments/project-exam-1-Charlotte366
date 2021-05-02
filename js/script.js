@@ -4,7 +4,9 @@ const proxy = "https://noroffcors.herokuapp.com/";
 
 const corsFix = proxy + url;
 
-const newjacketsContainer = document.querySelector(".results");
+const blogpostsContainer = document.querySelector(".results");
+
+
 
 
 
@@ -18,7 +20,7 @@ async function fetchPosts() {
 
     const posts = results.posts;
 
-    newjacketsContainer.innerHTML = "";
+    blogpostsContainer.innerHTML = "";
 
     console.log(results);
 
