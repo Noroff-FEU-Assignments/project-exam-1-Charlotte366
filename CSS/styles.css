@@ -35,3 +35,30 @@ nav a {
   width: 30px;
   height: 30px;
 }
+
+@media (min-width: 600px) {
+  nav {
+    display: inline-block;
+  }
+
+  .hamburger-label {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  nav a {
+    font-size: x-large;
+    color: black;
+    font-weight: bolder;
+  }
+}
