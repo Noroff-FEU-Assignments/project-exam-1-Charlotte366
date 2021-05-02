@@ -59,6 +59,13 @@ nav a {
   margin-top: 2px;
 }
 
+.containerForm {
+  width: 50%;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: white;
+}
+
 @media (min-width: 600px) {
   nav {
     display: inline-block;

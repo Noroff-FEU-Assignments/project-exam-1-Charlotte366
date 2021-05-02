@@ -54,7 +54,7 @@ message.onkeyup = function () {
 
     characterCount.innerHTML = length;
 
-    if (length >= 25) {
+    if (length >= 26) {
         submitButton.disabled = false;
     } else {
         submitButton.disabled = true;
