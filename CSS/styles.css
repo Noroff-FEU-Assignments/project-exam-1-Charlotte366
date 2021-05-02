@@ -53,6 +53,12 @@ nav a {
   height: 30px;
 }
 
+.form-error {
+  display: none;
+  color: red;
+  margin-top: 2px;
+}
+
 @media (min-width: 600px) {
   nav {
     display: inline-block;
