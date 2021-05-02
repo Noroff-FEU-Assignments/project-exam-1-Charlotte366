@@ -6,7 +6,9 @@ body {
 
 header {
   background-color: aqua;
-  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 /* Links */
