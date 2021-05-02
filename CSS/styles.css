@@ -74,8 +74,5 @@ nav a {
     font-size: x-large;
     color: black;
     font-weight: bolder;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
   }
 }
