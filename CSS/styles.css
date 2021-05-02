@@ -84,12 +84,25 @@ input {
   background-color: white;
 }
 
-@media only screen and (min-with: 600px) and (max-width: 1200px) {
+@media (max-width: 480px) {
+  .p {
+    font-size: 16px;
+  }
+
   .container_contact {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 0px;
     align-items: center;
-    justify-content: space-around;
+    margin-top: 10px;
+  }
+
+  input {
+    width: 95%;
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 16px;
   }
 }
 
