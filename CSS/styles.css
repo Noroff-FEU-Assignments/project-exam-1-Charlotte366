@@ -7,3 +7,31 @@ body {
 header {
   background-color: aqua;
 }
+
+nav,
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+
+nav ul {
+  padding: 0px;
+}
+
+nav li {
+  display: block;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+.square {
+  width: 30px;
+  height: 30px;
+}
