@@ -20,13 +20,13 @@ async function fetchPosts() {
 
     const posts = results.posts;
 
-    blogpostsContainer.innerHTML = "";
+    //blogpostsContainer.innerHTML = "";
 
     console.log(results);
 
     let html = "";
 
-    for (let i = 0; i < posts.length; i++) {
+    /*for (let i = 0; i < posts.length; i++) {
         console.log(posts[i].strCategory);
         html += `<div class="category">
             <h2><a href="details.html?posts=${posts[i].strCategory}"> ${posts[i].strCategory} </a></h2>
@@ -39,9 +39,9 @@ async function fetchPosts() {
         resultsContainer.innerHTML = html;
 
     }
-
-
-
+    */
+    
 }
+
 
 fetchPosts();
