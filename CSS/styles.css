@@ -84,6 +84,15 @@ input {
   background-color: white;
 }
 
+@media only screen and (min-with: 600px) and (max-width: 1200px) {
+  .container_contact {
+    display: flex;
+    margin: 0px;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
 @media (min-width: 600px) {
   nav {
     display: inline-block;
