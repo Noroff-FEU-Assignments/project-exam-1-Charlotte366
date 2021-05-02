@@ -4,7 +4,7 @@ const proxy = "https://noroffcors.herokuapp.com/";
 
 const corsFix = proxy + url;
 
-const blogpostsContainer = document.querySelector(".results");
+const resultsContainer = document.querySelector(".results");
 
 
 
@@ -20,17 +20,17 @@ async function fetchPosts() {
 
     const posts = results.posts;
 
-    //blogpostsContainer.innerHTML = "";
+    resultsContainer.innerHTML = "";
 
     console.log(results);
 
-    let html = "";
+    let html ="";
 
-    /*for (let i = 0; i < posts.length; i++) {
-        console.log(posts[i].strCategory);
-        html += `<div class="category">
-            <h2><a href="details.html?posts=${posts[i].strCategory}"> ${posts[i].strCategory} </a></h2>
-                        <p>id:${posts[i].idCategory}</p>
+    for (let i = 0; i < posts.length; i++) {
+        console.log(posts[i].strPosts);
+        html += `<div class="posts">
+            <h2><a href="spesificblogpost.html?posts=${posts[i].strPosts}"> ${posts[i].strPosts} </a></h2>
+                        <p>id:${posts[i].idPosts}</p>
                         <p>Description: ${posts[i].strPostsDescription}</p>
                         </div>
                         `;
@@ -39,7 +39,7 @@ async function fetchPosts() {
         resultsContainer.innerHTML = html;
 
     }
-    */
+    
     
 }
 
