@@ -8,6 +8,11 @@ header {
   background-color: aqua;
 }
 
+/* Links */
+a {
+  text-decoration: none;
+}
+
 nav,
 #hamburger-menu {
   display: none;
