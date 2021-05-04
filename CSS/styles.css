@@ -36,6 +36,14 @@ a {
   justify-content: space-around;
 }
 
+.slider {
+  display: flex;
+}
+
+img {
+  width: 100%;
+}
+
 nav,
 #hamburger-menu {
   display: none;
