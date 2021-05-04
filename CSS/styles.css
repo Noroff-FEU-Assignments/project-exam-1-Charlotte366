@@ -38,9 +38,16 @@ a {
 
 .slider {
   display: flex;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+figure {
+  margin: 0px;
 }
 
 img {
+  height: 600px;
   width: 100%;
 }
 
