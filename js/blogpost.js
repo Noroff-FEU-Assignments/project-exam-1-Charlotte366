@@ -50,6 +50,7 @@ for (let i = 0; i < results.length; i++) {
     html +=  `<div class="post">
     <h2><a href="spesificblogpost.html?id=${results[i].id}"> ${results[i].title.rendered} </a></h2>
     <p>Date:${results[i].date}</p>
+    <p>${results[i].content.rendered}</p>
                 </div>
                 `;
 

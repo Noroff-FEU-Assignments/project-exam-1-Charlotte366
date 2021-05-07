@@ -50,6 +50,10 @@ figure {
   opacity: 1, 5;
 }
 
+.post {
+  width: 100%;
+}
+
 .image-slider {
   flex: 5;
   opacity: 1;

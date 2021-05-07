@@ -1,3 +1,4 @@
+/*
 const containerSpesific = document.querySelector(".blogs");
 
 const queryString = document.location.search;
@@ -16,7 +17,29 @@ const proxy = "https://noroffcors.herokuapp.com/";
 
 const corsFix = proxy + url;
 
+*/
+
+
+const url = "https://myblog.charlotte366.no/wp-json/wp/v2/posts/59" 
+
+const proxy = "https://noroffcors.herokuapp.com/";
+
+const corsFix = proxy + url;
+
+const resultsContainerBlog = document.querySelector(".results");
+
+async function fetchDetails(){
+
+
+    const response = await fetch (corsFix);
+    
+    const results = await response.json();
+    
+    
+    console.log(results);
+}
+
+fetchDetails();
 
 
 
-   
