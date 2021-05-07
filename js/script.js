@@ -4,7 +4,7 @@ images.forEach(function(image){
         document.querySelector("image-slider").classList.remove("image-slider");
         const clickParent = event.target.parentNode;
         clickParent.classList.add("image-slider");
-        const clickParent = event.target.parentNode
-        clickParent.classList.add("image-slider")
+        const clickParent = event.target.parentNode;
+        clickParent.classList.add("image-slider");
     }
 })
