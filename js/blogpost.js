@@ -49,6 +49,7 @@ for (let i = 0; i < results.length; i++) {
     console.log(results[i].title);
     html +=  `<div class="post">
     <h2>${results[i].title.rendered}</h2>
+    <p>Date:${results[i].date}</p>
                 </div>
                 `;
 
