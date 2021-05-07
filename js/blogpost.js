@@ -29,6 +29,10 @@ async function fetchPosts() {
 }
 */
 
+
+
+
+
 async function fetchArray(){
 
 
@@ -36,7 +40,7 @@ const response = await fetch (corsFix);
 
 const results = await response.json();
 
-const array = results.array;
+//const Array = results.Array;
 
 resultsContainerBlog.innerHTML ="";
 
@@ -44,12 +48,10 @@ console.log(results);
 
 let html="";
 
-for (let i = 0; i < array.length; i++) {
-    console.log(array[i].strArray);
-    html +=  `<div class="array">
-    <h2><a href="details.html?array=${array[i].strArray}"> ${array[i].strArray} </a></h2>
-                <p>id:${array[i].idArray}</p>
-                <p>Description: ${array[i].strArrayDescription}</p>
+for (let i = 0; i < results.length; i++) {
+    console.log(results[i].title);
+    html +=  `<div class="post">
+    <h2>${results[i].title.rendered}</h2>
                 </div>
                 `;
 
@@ -58,17 +60,6 @@ for (let i = 0; i < array.length; i++) {
 
 }
 }
-
-
-
-const queryString = document.location.search;
-
-const params = new URLSearchParams(queryString);
-
-const id = params.get("id");
-
-
-
 
 
 fetchArray();
