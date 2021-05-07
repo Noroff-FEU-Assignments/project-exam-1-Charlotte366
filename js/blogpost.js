@@ -30,9 +30,6 @@ async function fetchPosts() {
 */
 
 
-
-
-
 async function fetchArray(){
 
 
