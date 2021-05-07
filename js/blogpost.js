@@ -1,4 +1,4 @@
-const url = "https://myblog.charlotte366.no/wp-json/wp/v2/posts" 
+const url = "https://myblog.charlotte366.no/wp-json/wp/v2/posts/?" 
 
 const proxy = "https://noroffcors.herokuapp.com/";
 
