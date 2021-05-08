@@ -54,6 +54,11 @@ figure {
   width: 100%;
 }
 
+p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 .image-slider {
   flex: 5;
   opacity: 1;
