@@ -7,29 +7,6 @@ const corsFix = proxy + url;
 const resultsContainerBlog = document.querySelector(".results");
 
 
-
-
-
-
-/*
-async function fetchPosts() {
-
-
-    const response = await fetch(corsFix);
-
-    const results = await response.json();
-
-    const posts = results.posts;
-
-    resultsContainer.innerHTML = "";
-
-    console.log(results);
-    
-    
-}
-*/
-
-
 async function fetchArray(){
 
 
@@ -37,7 +14,6 @@ const response = await fetch (corsFix);
 
 const results = await response.json();
 
-//const Array = results.Array;
 
 resultsContainerBlog.innerHTML ="";
 
@@ -62,3 +38,5 @@ for (let i = 0; i < results.length; i++) {
 
 
 fetchArray();
+
+
