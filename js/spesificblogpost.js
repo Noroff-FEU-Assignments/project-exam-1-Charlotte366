@@ -86,7 +86,17 @@ containerSpesific.innerHTML = result.title.rendered
         console.log(result)
         
         
-    containerSpesific.innerHTML = result.content.rendered
+    //containerSpesific.innerHTML = result.content.rendered
+
+    containerSpesific.innerHTML = `<div class="content">
+    <h2> ${result.title.rendered}</h2>
+    <p>Date:${result.date}</p>
+    <p>${result.content.rendered}</p>
+                </div>
+                `;
+
+
+
     
     }
     
