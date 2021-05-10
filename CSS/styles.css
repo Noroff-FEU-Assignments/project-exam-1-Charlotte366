@@ -12,6 +12,13 @@ header {
   justify-content: space-around;
 }
 
+.containernav {
+  display: flex;
+  position: absolute;
+  padding: 0.5rem;
+  padding-right: 0;
+}
+
 /* Links */
 a {
   text-decoration: none;
@@ -37,18 +44,17 @@ a {
   justify-content: space-around;
 }
 
-.slider {
-  display: flex;
-  margin: 0 auto;
-  max-width: 1200px;
+.imgheader {
+  width: 100%;
+  height: 300px;
 }
 
-figure {
-  flex: 1;
-  margin: 0px;
-  transition: 1, 5s all;
-  overflow: hidden;
-  opacity: 1, 5;
+.arrow {
+  display: inline-block;
+}
+
+.itemarrow {
+  line-height: 2px;
 }
 
 .post {
@@ -57,7 +63,43 @@ figure {
 
 p {
   margin: 0;
-  max-width: 600;
+  max-width: 600px;
+}
+
+.arrowa {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slider {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.slider img {
+  height: 400px;
+}
+
+figure {
+  flex: 1;
+  margin: 0px;
+  transition: 1.5s all;
+  overflow: hidden;
+  opacity: 0.5;
+}
+
+.image-slider img {
+  height: 500px;
+}
+
+.image-slider {
+  flex: 5;
+  opacity: 1;
 }
 
 .wp-block-image {
@@ -65,13 +107,7 @@ p {
   height: 400px;
   justify-content: space-around;
   align-items: center;
-  margin-left: 200px;
   display: flex;
-}
-
-.image-slider {
-  flex: 5;
-  opacity: 1;
 }
 
 img {

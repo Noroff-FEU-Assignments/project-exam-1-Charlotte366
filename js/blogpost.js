@@ -21,6 +21,7 @@ console.log(results);
 
 let html="";
 
+
 for (let i = 0; i < results.length; i++) {
     console.log(results[i].title);
     html +=  `<div class="post">
