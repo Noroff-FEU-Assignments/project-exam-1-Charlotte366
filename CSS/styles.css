@@ -57,8 +57,7 @@ figure {
 
 p {
   margin: 0;
-  width: 100%;
-  text-align: center;
+  max-width: 600;
 }
 
 .wp-block-image {
@@ -68,13 +67,6 @@ p {
   align-items: center;
   margin-left: 200px;
   display: flex;
-}
-
-.results {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .image-slider {
