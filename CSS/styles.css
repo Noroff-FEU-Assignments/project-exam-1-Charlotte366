@@ -74,6 +74,13 @@ p_p {
   display: flex;
 }
 
+.results {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .image-slider {
   flex: 5;
   opacity: 1;
