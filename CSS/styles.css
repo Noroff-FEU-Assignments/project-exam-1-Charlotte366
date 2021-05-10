@@ -50,13 +50,20 @@ figure {
   opacity: 1, 5;
 }
 
-.post {
-  width: 100%;
+.wp-block-image {
+  height: 400px;
+  width: 400px;
 }
 
 p {
-  width: 100%;
   margin: 0;
+  max-width: 600px;
+}
+
+p_p {
+  margin: 0;
+  max-width: 600px;
+  font-weight: bold;
 }
 
 .image-slider {
@@ -136,6 +143,12 @@ input {
     margin-top: 5px;
     padding: 10px;
     font-size: 16px;
+  }
+
+  .results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
