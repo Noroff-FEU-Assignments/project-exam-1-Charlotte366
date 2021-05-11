@@ -49,24 +49,22 @@ a {
   height: 300px;
 }
 
-.arrow {
-  display: inline-block;
-}
-
 .itemarrow {
   line-height: 2px;
 }
 
-.post {
+.posts {
+  display: flex;
   background-color: brown;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-p {
-  margin: 0;
-  max-width: 600px;
+.item {
+  justify-content: space-around;
 }
 
-.arrowa {
+.arrows {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -75,39 +73,11 @@ p {
   transform: translateY(-50%);
 }
 
-.slider {
-  display: flex;
-  margin: 0 auto;
-  max-width: 1000px;
-}
-
-.slider img {
-  height: 400px;
-}
-
-figure {
-  flex: 1;
-  margin: 0px;
-  transition: 1.5s all;
-  overflow: hidden;
-  opacity: 0.5;
-}
-
-.image-slider img {
-  height: 500px;
-}
-
-.image-slider {
-  flex: 5;
-  opacity: 1;
-}
-
 .wp-block-image {
-  width: 400px;
+  width: 200px;
   height: 400px;
   justify-content: space-around;
-  align-items: center;
-  display: flex;
+  align-items: left;
 }
 
 img {
@@ -184,7 +154,7 @@ input {
     font-size: 16px;
   }
 
-  .results {
+  .posts {
     display: flex;
     flex-direction: column;
     align-items: center;
