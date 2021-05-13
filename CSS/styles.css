@@ -1,15 +1,16 @@
 html,
 body {
   font-family: Arial, Helvetica, sans-serif;
+
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: aqua;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  background-color: #f3a800;
 }
 
 .containernav {
@@ -19,29 +20,49 @@ header {
   padding-right: 0;
 }
 
+.container
+
 /* Links */
 a {
   text-decoration: none;
 }
 
 .container_contact {
-  background-color: coral;
+  display: flex;
 }
 
-.container_contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+.contactimg {
+  width: 50%;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.containerForm {
+  width: 50%;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+main {
+  background-color: #5b995a;
 }
 
 .logo-text {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: larger;
-  color: black;
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+a,
+i {
+  color: #431f07;
 }
 
 .imgheader {
@@ -69,6 +90,14 @@ a {
   justify-content: space-around;
 }
 
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgrey;
+  margin-bottom: -15px;
+}
+
 .LatestPosts {
   display: flex;
   flex-direction: row;
@@ -85,15 +114,29 @@ a {
   transform: translateY(-50%);
 }
 
+i:hover {
+  color: blue;
+}
+
+a:hover {
+  color: #824026;
+}
+
 .wp-block-image {
   width: 400px;
   height: 400px;
   justify-content: space-around;
   align-items: left;
+  border-color: aqua;
+}
+
+.containerblog {
+  display: flex;
+  flex-direction: column;
 }
 
 img {
-  height: 600px;
+  height: 400px;
   width: 100%;
 }
 
