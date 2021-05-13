@@ -49,3 +49,55 @@ for (let i = 0; i < results.length; i++) {
 }
 
 fetchThreePosts ()
+
+
+
+//KODE
+const apiUrl =
+    "https://myblog.charlotte366.no/wp-json/wp/v2/";
+
+let length = 3;
+let offset = 0;
+
+const buttonPrevious = document.querySelector("#previous");
+const buttonNext = document.querySelector("#next");
+
+async function fetchApi() {
+    try {
+        const data = await fetch(
+            apiUrl + `posts?per_page=${length}&offset=${offset}&_embed`
+        );
+        const json = await data.json();
+
+
+
+        // Validate Buttons visibility
+        if (offset === 0) {
+            buttonPrevious.style.display = "none";
+        } else {
+            buttonPrevious.style.display = "block";
+        }
+        if (json.length < 3) {
+            buttonNext.style.display = "none";
+        } else {
+            buttonNext.style.display = "block";
+        }
+
+
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+buttonPrevious.addEventListener("click", () => {
+    if (offset >= 3) {
+        offset -= 3;
+    }
+    fetchApi(apiUrl);
+});
+buttonNext.addEventListener("click", () => {
+    offset += 3;
+    fetchApi(apiUrl);
+});
+
+fetchApi(apiUrl);
