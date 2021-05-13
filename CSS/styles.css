@@ -57,10 +57,22 @@ a {
   display: flex;
   background-color: brown;
   flex-direction: column;
+  align-items: center;
   justify-content: space-around;
 }
 
-.item {
+.content {
+  background-color: yellow;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.LatestPosts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-around;
 }
 
@@ -74,7 +86,7 @@ a {
 }
 
 .wp-block-image {
-  width: 200px;
+  width: 400px;
   height: 400px;
   justify-content: space-around;
   align-items: left;
@@ -152,13 +164,6 @@ input {
     margin-top: 5px;
     padding: 10px;
     font-size: 16px;
-  }
-
-  .posts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0px;
   }
 }
 
