@@ -13,30 +13,25 @@
 
 
 const url = "https://myblog.charlotte366.no/wp-json/wp/v2/posts?per_page=3&_embed=1" 
-
 const proxy = "https://noroffcors.herokuapp.com/";
-
 const corsFix = proxy + url;
-
 const resultsContainerBlog = document.querySelector(".LatestPosts");
+
+
+let length = 3;
+let offset = 0;
 
 
 async function fetchThreePosts() {
 
-
-const response = await fetch (corsFix);
-
+try {
+const response = await fetch (corsFix + `posts?per_page=${length}&offset=${offset}&_embed`);
 const results = await response.json();
-
 resultsContainerBlog.innerHTML ="";
-
 console.log(results);
 
 
-
 let html="";
-
-
 
 for (let i = 0; i < results.length; i++) {
     html +=  `<figure>
@@ -48,6 +43,11 @@ for (let i = 0; i < results.length; i++) {
 }
 }
 
+catch (error) {
+    console.log(error);
+}
+}
+
 fetchThreePosts ()
 
 
@@ -56,11 +56,9 @@ fetchThreePosts ()
 const apiUrl =
     "https://myblog.charlotte366.no/wp-json/wp/v2/";
 
-let length = 3;
-let offset = 0;
 
-const buttonPrevious = document.querySelector("#previous");
-const buttonNext = document.querySelector("#next");
+const buttonPrevious = document.querySelector(".previous");
+const buttonNext = document.querySelector(".next");
 
 async function fetchApi() {
     try {
@@ -68,8 +66,7 @@ async function fetchApi() {
             apiUrl + `posts?per_page=${length}&offset=${offset}&_embed`
         );
         const json = await data.json();
-
-
+        console.log(json)
 
         // Validate Buttons visibility
         if (offset === 0) {

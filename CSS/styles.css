@@ -1,29 +1,48 @@
 html,
 body {
   font-family: Arial, Helvetica, sans-serif;
-
   margin: 0;
   padding: 0;
 }
 
 header {
+  background-color: lightgrey;
+}
+
+.headerimg {
+  border: 70px solid lightgrey;
+}
+
+.headerimg img {
+  height: 450px;
+  width: 100%;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerNav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #f3a800;
+  background-color: #d4d4d2;
+  padding: -15px;
+  margin-bottom: -25px;
+  margin-top: -25px;
 }
 
-.containernav {
-  display: flex;
-  position: absolute;
+hr {
+  width: 50%;
+  height: 4px;
+  background-color: green;
 }
 
 .nav-text {
-  background-color: #5b995a;
   padding: 10px;
 }
-
-.container
 
 /* Links */
 a {
@@ -52,11 +71,12 @@ p {
 }
 
 .logo-text {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: larger;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: large;
+  margin-left: 10px;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  color: #1c1c1c;
 }
 
 a,
@@ -69,12 +89,11 @@ i {
 }
 
 main {
-  background-color: brown;
+  background-color: #d4d4d2;
 }
 
 .posts {
   display: flex;
-  background-color: brown;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
@@ -89,11 +108,13 @@ main {
 }
 
 footer {
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: lightgrey;
   margin-bottom: -15px;
+  border-top: darkgreen 4px solid;
 }
 
 .LatestPosts {
@@ -101,7 +122,6 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  background-color: brown;
 }
 
 .arrows {
