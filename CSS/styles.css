@@ -305,7 +305,8 @@ textarea {
     margin-top: 10px;
   }
 
-  .content img {
+  .content img,
+  .figureclass img {
     width: 100%;
   }
 
