@@ -296,14 +296,18 @@ textarea {
     font-size: 16px;
   }
 
-  .container_contact,
-  .icons {
+  .container_contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0px;
     align-items: center;
     margin-top: 10px;
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: column;
   }
 
   input {
