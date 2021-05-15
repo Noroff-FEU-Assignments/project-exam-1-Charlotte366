@@ -323,16 +323,11 @@ textarea {
 
 @media (min-width: 600px) {
   nav {
-    display: inline-block;
+    display: block;
   }
 
   .hamburger-label {
     display: none;
-  }
-
-  .hamburgermenu {
-    display: flex;
-    justify-items: right;
   }
 
   ul {
@@ -343,7 +338,6 @@ textarea {
   li {
     display: flex;
     align-items: right;
-    justify-content: space-around;
   }
 
   nav a {
