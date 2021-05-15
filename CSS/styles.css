@@ -291,18 +291,13 @@ textarea {
   padding: 1rem;
 }
 
-.aboutus {
-}
-
 @media (max-width: 480px) {
   .p {
     font-size: 16px;
   }
 
   .container_contact,
-  .content,
-  figure,
-  img img {
+  .icons {
     display: flex;
     flex-direction: column;
     justify-content: center;
