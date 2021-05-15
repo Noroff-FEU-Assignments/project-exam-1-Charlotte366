@@ -104,7 +104,9 @@ containerSpesific.innerHTML = result.title.rendered
     
     }
     
-        getBlogpost();   
+        getBlogpost();
+        
+     
 
 
 

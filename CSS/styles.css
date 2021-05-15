@@ -14,7 +14,7 @@ header {
 }
 
 .headerimg img {
-  height: 450px;
+  height: 400px;
   width: 100%;
 }
 
@@ -42,6 +42,26 @@ hr {
 
 .nav-text {
   padding: 10px;
+}
+
+.icons {
+  display: flex;
+  font-size: 35px;
+  margin-right: 7%;
+}
+
+.face {
+  margin-right: 20px;
+}
+.insta {
+  margin-right: 20px;
+}
+.snap {
+  margin-right: 20px;
+}
+
+.copyright {
+  margin-left: 15px;
 }
 
 /* Links */
@@ -88,6 +108,10 @@ i {
   line-height: 2px;
 }
 
+.arrows {
+  font-size: 30px;
+}
+
 main {
   background-color: #d4d4d2;
 }
@@ -100,7 +124,6 @@ main {
 }
 
 .content {
-  background-color: yellow;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -108,10 +131,10 @@ main {
 }
 
 footer {
-  height: 40px;
+  height: 100px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background-color: lightgrey;
   margin-bottom: -15px;
   border-top: darkgreen 4px solid;
@@ -119,9 +142,10 @@ footer {
 
 .LatestPosts {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 100px;
+  margin-top: 100px;
 }
 
 .arrows {
@@ -129,16 +153,32 @@ footer {
   justify-content: space-between;
   width: 100%;
   position: absolute;
-  top: 50%;
+  top: 220%;
   transform: translateY(-50%);
 }
 
+.arrowup {
+  font-size: 20px;
+}
+
 i:hover {
-  color: blue;
+  color: green;
 }
 
 a:hover {
   color: #824026;
+}
+
+b:hover {
+  color: blue;
+}
+
+s:hover {
+  color: brown;
+}
+
+q:hover {
+  color: yellow;
 }
 
 .LatestPosts img {
@@ -194,17 +234,31 @@ nav a {
 }
 
 input {
-  width: 95%;
-  margin-top: 15px;
-  padding: 15px;
+  width: 100%;
+  margin-top: 5px;
+  padding: 5px;
+  margin-right: 15px;
+  border-radius: 10px;
   font-size: 16px;
+}
+
+textarea {
+  width: 100%;
+  margin-top: 5px;
+  padding: 5px;
+  margin-right: 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  height: 90px;
 }
 
 .containerForm {
   width: 50%;
   margin: 1rem;
   padding: 1rem;
-  background-color: white;
+}
+
+.aboutus {
 }
 
 @media (max-width: 480px) {

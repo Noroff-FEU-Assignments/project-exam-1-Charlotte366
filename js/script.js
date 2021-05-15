@@ -9,10 +9,7 @@
  //   }
 //})
 
-
-
-
-const url = "https://myblog.charlotte366.no/wp-json/wp/v2/posts?per_page=3&_embed=1" 
+const url = "https://myblog.charlotte366.no/wp-json/wp/v2/" 
 const proxy = "https://noroffcors.herokuapp.com/";
 const corsFix = proxy + url;
 const resultsContainerBlog = document.querySelector(".LatestPosts");
@@ -27,8 +24,10 @@ async function fetchThreePosts() {
 try {
 const response = await fetch (corsFix + `posts?per_page=${length}&offset=${offset}&_embed`);
 const results = await response.json();
+//const headers = await response.headers;
 resultsContainerBlog.innerHTML ="";
 console.log(results);
+//console.log(headers);
 
 
 let html="";
@@ -51,6 +50,8 @@ catch (error) {
 fetchThreePosts ()
 
 
+
+/*
 
 //KODE
 const apiUrl =
@@ -98,3 +99,4 @@ buttonNext.addEventListener("click", () => {
 });
 
 fetchApi(apiUrl);
+*/
