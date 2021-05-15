@@ -306,9 +306,7 @@ textarea {
   }
 
   .icons {
-    display: flex;
-    flex-direction: column;
-    font-size: 10px;
+    font-size: 25px;
   }
 
   input {
