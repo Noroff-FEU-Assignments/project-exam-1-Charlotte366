@@ -305,6 +305,10 @@ textarea {
     margin-top: 10px;
   }
 
+  .content img {
+    height: 300px;
+  }
+
   .icons {
     font-size: 30px;
   }
