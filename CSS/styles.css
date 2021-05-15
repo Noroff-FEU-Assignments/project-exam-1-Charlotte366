@@ -34,6 +34,24 @@ h2 {
   margin-top: -25px;
 }
 
+.loader {
+  border: 16px solid lightgrey;
+  border-top: 16px solid green;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  10% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 hr {
   width: 50%;
   height: 4px;
@@ -42,6 +60,21 @@ hr {
 
 .nav-text {
   padding: 10px;
+}
+
+.viewmore {
+  display: flex;
+  justify-content: center;
+}
+
+.button,
+button {
+  background-color: green;
+  border-radius: 8px;
+  color: #1c1c1c;
+  font-weight: bolder;
+  max-width: 80px;
+  margin-bottom: 15px;
 }
 
 .icons {
@@ -273,6 +306,10 @@ textarea {
     margin: 0px;
     align-items: center;
     margin-top: 10px;
+  }
+
+  .hr {
+    display: none;
   }
 
   input {
