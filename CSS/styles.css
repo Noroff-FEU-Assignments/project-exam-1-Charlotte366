@@ -330,6 +330,11 @@ textarea {
     display: none;
   }
 
+  .hamburgermenu {
+    display: flex;
+    justify-items: right;
+  }
+
   ul {
     display: flex;
     justify-content: right;
@@ -337,12 +342,12 @@ textarea {
 
   li {
     display: flex;
-    align-items: center;
+    align-items: right;
     justify-content: space-around;
   }
 
   nav a {
     font-size: x-large;
-    font-weight: lighter;
+    font-weight: bolder;
   }
 }
