@@ -343,7 +343,6 @@ textarea {
 
   nav a {
     font-size: x-large;
-    color: yellow;
-    font-weight: bolder;
+    font-weight: lighter;
   }
 }
