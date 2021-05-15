@@ -299,17 +299,14 @@ textarea {
     font-size: 16px;
   }
 
-  .container_contact {
+  .container_contact,
+  .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0px;
     align-items: center;
     margin-top: 10px;
-  }
-
-  .hr {
-    display: none;
   }
 
   input {
