@@ -300,7 +300,9 @@ textarea {
   }
 
   .container_contact,
-  .content {
+  .content,
+  figure,
+  img img {
     display: flex;
     flex-direction: column;
     justify-content: center;
