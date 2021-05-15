@@ -323,7 +323,7 @@ textarea {
 
 @media (min-width: 600px) {
   nav {
-    display: block;
+    display: inline-block;
   }
 
   .hamburger-label {
@@ -332,16 +332,17 @@ textarea {
 
   ul {
     display: flex;
-    justify-content: right;
+    justify-content: center;
   }
 
   li {
     display: flex;
-    align-items: right;
+    align-items: center;
   }
 
   nav a {
     font-size: x-large;
     font-weight: bolder;
+    background-color: yellow;
   }
 }
