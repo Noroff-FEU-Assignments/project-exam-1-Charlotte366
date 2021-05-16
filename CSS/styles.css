@@ -240,6 +240,7 @@ nav,
 .hamburger-label {
   float: right;
   display: block;
+  padding: 15px;
 }
 
 nav ul {
