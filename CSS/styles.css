@@ -161,6 +161,10 @@ hr {
   justify-content: space-around;
 }
 
+.content img {
+  border: 70px solid lightgrey;
+}
+
 .viewmore {
   display: flex;
   justify-content: center;
