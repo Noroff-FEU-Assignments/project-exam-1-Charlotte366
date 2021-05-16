@@ -308,7 +308,7 @@ textarea {
 
   .content img {
     width: 100%;
-    border: 5px;
+    border: 70px solid lightgrey;
   }
 
   .icons {
