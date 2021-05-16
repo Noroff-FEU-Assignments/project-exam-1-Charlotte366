@@ -127,6 +127,7 @@ hr {
 }
 
 .LatestPosts img {
+  margin-left: -40px;
   height: 300px;
   width: 200px;
 }
@@ -155,6 +156,7 @@ hr {
 
 .content {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-around;
 }
@@ -313,6 +315,11 @@ footer {
     margin-top: 10px;
   }
 
+  .content img,
+  .posts img {
+    width: 100%;
+  }
+
   .icons {
     font-size: 30px;
   }
@@ -327,10 +334,6 @@ footer {
 
 .wp-block-image img {
   height: 100px;
-}
-
-.modal {
-  z-index: 1;
 }
 
 @media (min-width: 600px) {
