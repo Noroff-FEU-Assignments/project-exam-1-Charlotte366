@@ -239,6 +239,7 @@ nav,
 
 .hamburger-label {
   float: right;
+  display: block;
 }
 
 nav ul {
