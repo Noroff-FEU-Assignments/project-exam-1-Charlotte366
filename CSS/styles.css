@@ -306,8 +306,7 @@ textarea {
     margin-top: 10px;
   }
 
-  .content,
-  img {
+  .content {
     width: 100%;
     border: 50px solid lightgrey;
   }
