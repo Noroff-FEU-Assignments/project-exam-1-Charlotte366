@@ -306,10 +306,6 @@ textarea {
     margin-top: 10px;
   }
 
-  .content img {
-    width: 100%;
-  }
-
   .icons {
     font-size: 30px;
   }
@@ -321,7 +317,7 @@ textarea {
     font-size: 16px;
   }
 
-  .content img img {
+  .content img {
     width: 400px;
     height: 400px;
     align-items: center;
