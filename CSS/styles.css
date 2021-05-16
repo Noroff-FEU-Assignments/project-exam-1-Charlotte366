@@ -312,6 +312,10 @@ textarea {
     border: 50px solid lightgrey;
   }
 
+  img {
+    border: 50px solid lightgrey;
+  }
+
   .icons {
     font-size: 30px;
   }
