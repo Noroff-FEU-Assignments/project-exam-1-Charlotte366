@@ -66,6 +66,7 @@ containerSpesific.innerHTML = result.title.rendered
 
     const containerSpesific = document.querySelector(".blogs");
     const navtext = document.querySelector(".nav-text");
+
     const queryString = document.location.search;
     const params = new URLSearchParams(queryString);
     const id = params.get("id");
@@ -91,6 +92,8 @@ containerSpesific.innerHTML = result.title.rendered
     <h2> ${result.title.rendered}</h2>
     <p>Date published:${result.date}</p>
     ${result.content.rendered}
+    
+    
                 </div>
                 `;
 
@@ -105,6 +108,14 @@ containerSpesific.innerHTML = result.title.rendered
     }
     
         getBlogpost();
+
+
+
+
+
+
+
+
         
      
 
