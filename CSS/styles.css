@@ -5,8 +5,32 @@ body {
   padding: 0;
 }
 
+/* Links */
+a {
+  text-decoration: none;
+}
+
 header {
   background-color: lightgrey;
+}
+
+.logo-text {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: large;
+  margin-left: 10px;
+  display: flex;
+  color: #1c1c1c;
+}
+
+.containerNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #d4d4d2;
+  padding: -15px;
+  margin-bottom: -25px;
+  margin-top: -25px;
 }
 
 .headerimg {
@@ -18,20 +42,53 @@ header {
   width: 100%;
 }
 
+nav,
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+
+.hamburger-label {
+  display: block;
+  padding: 15px;
+}
+
+nav ul {
+  padding: 0px;
+}
+
+nav li {
+  display: block;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+.square {
+  width: 30px;
+  height: 30px;
+}
+
+.nav-text {
+  padding: 10px;
+}
+
+hr {
+  width: 50%;
+  height: 4px;
+  background-color: green;
+}
+
 h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.containerNav {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #d4d4d2;
-  padding: -15px;
-  margin-bottom: -25px;
-  margin-top: -25px;
 }
 
 .loader {
@@ -50,16 +107,6 @@ h2 {
   100% {
     transform: rotate(360deg);
   }
-}
-
-hr {
-  width: 50%;
-  height: 4px;
-  background-color: green;
-}
-
-.nav-text {
-  padding: 10px;
 }
 
 .viewmore {
@@ -97,11 +144,6 @@ button {
   margin-left: 15px;
 }
 
-/* Links */
-a {
-  text-decoration: none;
-}
-
 .container_contact {
   display: flex;
 }
@@ -121,15 +163,6 @@ a {
 p {
   max-width: 600px;
   margin: 0 auto;
-}
-
-.logo-text {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: large;
-  margin-left: 10px;
-  display: flex;
-  color: #1c1c1c;
 }
 
 a,
@@ -216,8 +249,8 @@ q:hover {
 }
 
 .LatestPosts img {
-  height: 300px;
-  width: 250px;
+  height: 400px;
+  width: 200px;
 }
 
 img {
@@ -226,39 +259,6 @@ img {
   justify-content: space-around;
   align-items: left;
   border-color: aqua;
-}
-
-nav,
-#hamburger-menu {
-  display: none;
-}
-
-#hamburger-menu:checked ~ nav {
-  display: block;
-}
-
-.hamburger-label {
-  display: block;
-  padding: 15px;
-}
-
-nav ul {
-  padding: 0px;
-}
-
-nav li {
-  display: block;
-}
-
-nav a {
-  text-decoration: none;
-  padding: 10px;
-  display: block;
-}
-
-.square {
-  width: 30px;
-  height: 30px;
 }
 
 .form-error {
@@ -304,6 +304,12 @@ textarea {
     margin: 0px;
     align-items: center;
     margin-top: 10px;
+  }
+
+  .LatestPosts {
+    margin-bottom: 100px;
+    margin-top: 100px;
+    height: 600px;
   }
 
   .content img,
