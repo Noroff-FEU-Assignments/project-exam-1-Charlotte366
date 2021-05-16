@@ -161,10 +161,6 @@ hr {
   justify-content: space-around;
 }
 
-.content img img {
-  border: 70px solid lightgrey;
-}
-
 .viewmore {
   display: flex;
   justify-content: center;
@@ -229,8 +225,7 @@ img {
   width: 400px;
   height: 400px;
   justify-content: space-around;
-  align-items: left;
-  border-color: aqua;
+  border: 70px solid lightgrey;
 }
 
 .form-error {
