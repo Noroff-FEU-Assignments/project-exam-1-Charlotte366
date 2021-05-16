@@ -1,13 +1,15 @@
-//const url = "https://myblog.charlotte366.no/wp-json/wp/v2/posts/?per_page=4" 
+/*const url = "https://myblog.charlotte366.no/wp-json/wp/v2/posts/?per_page=4" 
 
-//const images = document.querySelectorAll(".slider img");
-//images.forEach(function(image){
-    //image.onclick = function(event) {
-       // document.querySelector("image-slider").classList.remove("image-slider");
-      //  const clickParent = event.target.parentNode;
-     //   clickParent.classList.add("image-slider");
- //   }
-//})
+const arrows = document.querySelectorAll(".previous img");
+arrows.forEach(function(arrows){
+arrows.onclick = function(event) {
+document.querySelector("arrows").classList.remove("arrows");
+const clickParent = event.target.parentNode;
+  clickParent.classList.add("arrows");
+ }})
+
+ */
+
 
 const url = "https://myblog.charlotte366.no/wp-json/wp/v2/" 
 const proxy = "https://noroffcors.herokuapp.com/";
@@ -48,6 +50,8 @@ catch (error) {
 }
 
 fetchThreePosts ()
+
+
 
 
 
