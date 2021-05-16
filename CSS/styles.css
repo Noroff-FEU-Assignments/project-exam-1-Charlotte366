@@ -306,6 +306,10 @@ textarea {
     margin-top: 10px;
   }
 
+  .content {
+    width: 100%;
+  }
+
   .icons {
     font-size: 30px;
   }
