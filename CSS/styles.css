@@ -159,6 +159,7 @@ hr {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  width: 100%;
 }
 
 .viewmore {
@@ -322,6 +323,11 @@ footer {
     margin-top: 5px;
     padding: 10px;
     font-size: 16px;
+  }
+
+  .content img,
+  .posts {
+    width: 100%;
   }
 }
 
