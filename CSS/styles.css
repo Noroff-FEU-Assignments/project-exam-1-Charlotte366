@@ -221,10 +221,9 @@ q:hover {
   color: yellow;
 }
 
-img img {
+img {
   width: 400px;
   height: 400px;
-  margin: 40px;
   align-items: center;
   justify-content: space-around;
 }
