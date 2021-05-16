@@ -237,6 +237,10 @@ nav,
   display: block;
 }
 
+.hamburger-label {
+  float: right;
+}
+
 nav ul {
   padding: 0px;
 }
