@@ -300,12 +300,11 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
   }
 
   .LatestPosts img {
-    width: 80px;
-    height: 100px;
+    width: 100px;
+    height: 250px;
   }
 
   .container_contact {
