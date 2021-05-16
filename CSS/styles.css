@@ -297,13 +297,13 @@ footer {
 
   .LatestPosts {
     display: flex;
+    float: left;
     flex-wrap: wrap;
-    justify-content: center;
   }
 
   .LatestPosts img {
     width: 100px;
-    height: 100px;
+    height: 200px;
   }
 
   .container_contact {
