@@ -306,6 +306,11 @@ textarea {
     margin-top: 10px;
   }
 
+  .content img {
+    width: 100%;
+    border: 5px;
+  }
+
   .icons {
     font-size: 30px;
   }
@@ -315,14 +320,6 @@ textarea {
     margin-top: 5px;
     padding: 10px;
     font-size: 16px;
-  }
-
-  .content img {
-    width: 400px;
-    height: 400px;
-    align-items: center;
-    justify-content: space-around;
-    margin-left: 10px;
   }
 }
 
