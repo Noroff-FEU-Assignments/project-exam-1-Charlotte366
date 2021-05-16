@@ -228,11 +228,6 @@ img {
   border-color: aqua;
 }
 
-.containerblog {
-  display: flex;
-  flex-direction: column;
-}
-
 nav,
 #hamburger-menu {
   display: none;
