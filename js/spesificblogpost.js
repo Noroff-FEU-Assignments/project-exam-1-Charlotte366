@@ -65,7 +65,7 @@ containerSpesific.innerHTML = result.title.rendered
     */
 
     const containerSpesific = document.querySelector(".blogs");
-    const navtext = document.querySelector(".nav-text")
+    const navtext = document.querySelector(".nav-text");
     const queryString = document.location.search;
     const params = new URLSearchParams(queryString);
     const id = params.get("id");
