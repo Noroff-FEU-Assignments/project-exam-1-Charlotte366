@@ -320,6 +320,14 @@ textarea {
     padding: 10px;
     font-size: 16px;
   }
+
+  .posts {
+    width: 400px;
+    height: 400px;
+    justify-content: space-around;
+    align-items: left;
+    border-color: aqua;
+  }
 }
 
 @media (min-width: 600px) {
