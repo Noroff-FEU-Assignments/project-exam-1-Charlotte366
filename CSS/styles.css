@@ -306,7 +306,8 @@ textarea {
     margin-top: 10px;
   }
 
-  .content img {
+  .content img,
+  .posts img {
     width: 100%;
   }
 
