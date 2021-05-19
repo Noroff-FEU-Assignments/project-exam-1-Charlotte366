@@ -1,5 +1,9 @@
-    const containerSpesific = document.querySelector(".blogs");
+
+    
+    const containerBlogs = document.querySelector(".blogs");
     const navtext = document.querySelector(".nav-text");
+    const postimg = document.querySelector(".postimg");
+
 
     const queryString = document.location.search;
     const params = new URLSearchParams(queryString);
@@ -21,7 +25,7 @@
         
    
     
-    containerSpesific.innerHTML = `<div class="posts">
+    containerBlogs.innerHTML = `<div class="posts">
     <h2> ${result.title.rendered}</h2>
     <p>Date published:${result.date}</p>
     ${result.content.rendered}
@@ -34,9 +38,21 @@
     <a href= "listBlogpost.html"> - Blogposts</a>
     - ${result.title.rendered}
     `;
+
+    postimg.innerHTML = `
+    <img src= "${result._embedded["wp:featuredmedia"][0].source_url}" 
+    onclick="onClick(this)">
+    `;
+
     }
     
         getBlogpost();
+
+
+        function onClick(element) {
+            document.getElementById("image-1").src = element.src;
+            document.getElementById("modal-1").style.display = "block";
+          }
 
 
 
