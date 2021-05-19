@@ -47,7 +47,7 @@ main {
 }
 
 .headerimg img {
-  height: 400px;
+  height: 500px;
   width: 100%;
 }
 
@@ -390,6 +390,11 @@ footer {
     margin-top: 5px;
     padding: 10px;
     font-size: 16px;
+  }
+
+  .headerimg img {
+    border-radius: hidden;
+    max-width: 100%;
   }
 
   img {
