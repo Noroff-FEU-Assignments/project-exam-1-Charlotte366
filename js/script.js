@@ -22,7 +22,8 @@ let html="";
 
 for (let i = 0; i < results.length; i++) {
     html +=  `<figure class = "carousel">
-    <a href="spesificblogpost.html?id=${results[i].id}"> <img src= "${results[i]._embedded["wp:featuredmedia"][0].source_url}" />
+    <a href="spesificblogpost.html?id=${results[i].id}">
+    <img src= "${results[i]._embedded["wp:featuredmedia"][0].source_url}" alt: ${results[i]._embedded["wp:featuredmedia"][0].alt_text} />
     </a>
     <p>${results[i].title.rendered}</p>
     </figure>

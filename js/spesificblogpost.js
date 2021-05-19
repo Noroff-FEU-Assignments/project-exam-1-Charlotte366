@@ -40,7 +40,7 @@
     `;
 
     postimg.innerHTML = `
-    <img src= "${result._embedded["wp:featuredmedia"][0].source_url}" 
+    <img src= "${result._embedded["wp:featuredmedia"][0].source_url} alt: ${results[i]._embedded["wp:featuredmedia"][0].alt_text}" 
     onclick="onClick(this)">
     `;
 

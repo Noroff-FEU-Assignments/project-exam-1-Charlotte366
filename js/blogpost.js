@@ -24,7 +24,7 @@ async function fetchPosts(){
     <h2><a href="spesificblogpost.html?id=${results[i].id}"> ${results[i].title.rendered} </a></h2>
     <p>Date published:${results[i].date}</p>
     <div class = "content">
-    <img src= "${results[i]._embedded["wp:featuredmedia"][0].source_url}" />
+    <img src= "${results[i]._embedded["wp:featuredmedia"][0].source_url}" alt: ${results[i]._embedded["wp:featuredmedia"][0].alt_text} "/>
     </div>
     </div>
 

@@ -135,7 +135,6 @@ hr {
 }
 
 .carousel img {
-  margin-left: -40px;
   height: 300px;
   width: 200px;
   border-radius: 8px;
@@ -235,6 +234,7 @@ img {
   width: 400px;
   height: 400px;
   justify-content: space-around;
+  border-radius: 8px;
 }
 
 .form-error {
@@ -344,7 +344,6 @@ footer {
 
   .LatestPosts {
     display: flex;
-    float: left;
     flex-wrap: wrap;
   }
 
@@ -370,6 +369,13 @@ footer {
     margin-top: 5px;
     padding: 10px;
     font-size: 16px;
+  }
+
+  img {
+    width: 400px;
+    height: 400px;
+    justify-content: space-around;
+    border-radius: 8px;
   }
 }
 
