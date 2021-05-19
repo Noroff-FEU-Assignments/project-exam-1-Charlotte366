@@ -14,8 +14,8 @@ const results = await response.json();
 const TotalPages = await response.headers.get('X-WP-TotalPages');
 resultsContainerBlog.innerHTML ="";
 console.log(results);
-console.log(url)
-console.log(TotalPages)
+console.log("url:" + url)
+console.log("Total number of pages:" + TotalPages)
 
 
 let html="";

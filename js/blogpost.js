@@ -12,7 +12,7 @@ async function fetchPosts(){
     const results = await response.json();
     const TotalPages = await response.headers.get('X-WP-TotalPages');
     console.log(results);
-    console.log(TotalPages)
+    console.log("Total number of pages:" + TotalPages)
 
     resultsContainerBlog.innerHTML ="";
 

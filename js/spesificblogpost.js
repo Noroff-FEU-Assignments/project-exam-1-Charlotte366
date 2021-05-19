@@ -8,15 +8,10 @@
     const queryString = document.location.search;
     const params = new URLSearchParams(queryString);
     const id = params.get("id");
-    console.log(id);
+    console.log("id:" + id);
     
     const url ="https://myblog.charlotte366.no/wp-json/wp/v2/posts/" + id + "?_embed";
-    console.log(url);
-    
-    const proxy = "https://noroffcors.herokuapp.com/"; 
-    const corsFix = proxy + url;
-    
-    
+    console.log("url:" + url);
     
     async function getBlogpost() {
         const response = await fetch (url);
