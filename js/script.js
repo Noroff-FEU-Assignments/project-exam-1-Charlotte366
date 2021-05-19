@@ -1,47 +1,51 @@
-/*const url = "https://myblog.charlotte366.no/wp-json/wp/v2/posts/?per_page=4" 
 
-const arrows = document.querySelectorAll(".previous img");
-arrows.forEach(function(arrows){
-arrows.onclick = function(event) {
-document.querySelector("arrows").classList.remove("arrows");
-const clickParent = event.target.parentNode;
-  clickParent.classList.add("arrows");
- }})
-
- */
-
-
-const url = "https://myblog.charlotte366.no/wp-json/wp/v2/" 
-const proxy = "https://noroffcors.herokuapp.com/";
-const corsFix = proxy + url;
 const resultsContainerBlog = document.querySelector(".LatestPosts");
-
-
-let length = 3;
-let offset = 0;
+const arrowRight = document.querySelector(".next")
+const arrowLeft = document.querySelector(".previous")
+let page = 1
 
 
 async function fetchThreePosts() {
 
 try {
-const response = await fetch (corsFix + `posts?per_page=${length}&offset=${offset}&_embed`);
+const url = "https://myblog.charlotte366.no/wp-json/wp/v2/posts?per_page=3&page=" + page + "&_embed=1"
+const response = await fetch (url)
 const results = await response.json();
-//const headers = await response.headers;
+const TotalPages = await response.headers.get('X-WP-TotalPages');
 resultsContainerBlog.innerHTML ="";
 console.log(results);
-//console.log(headers);
+console.log(url)
+console.log(TotalPages)
 
 
 let html="";
 
 for (let i = 0; i < results.length; i++) {
-    html +=  `<figure>
+    html +=  `<figure class = "carousel">
     <a href="spesificblogpost.html?id=${results[i].id}"> <img src= "${results[i]._embedded["wp:featuredmedia"][0].source_url}" />
     </a>
+    <p>${results[i].title.rendered}</p>
     </figure>
     `;
     resultsContainerBlog.innerHTML = html;
 }
+
+        // Arrows visibility
+        //If page number is more than 1, show previous arrow
+        if (page != 1) {
+            arrowLeft.style.display = "block";
+        } else {
+            arrowLeft.style.display = "none";
+        }
+
+        //If page number is less than Total Pages, show next arrow.
+        if (page >= TotalPages) {
+            arrowRight.style.display = "none";
+        } else {
+            arrowRight.style.display = "block";
+        }
+
+
 }
 
 catch (error) {
@@ -49,58 +53,23 @@ catch (error) {
 }
 }
 
-fetchThreePosts ()
+fetchThreePosts ();
 
 
 
-
-
-/*
-
-//KODE
-const apiUrl =
-    "https://myblog.charlotte366.no/wp-json/wp/v2/";
-
-
-const buttonPrevious = document.querySelector(".previous");
-const buttonNext = document.querySelector(".next");
-
-async function fetchApi() {
-    try {
-        const data = await fetch(
-            apiUrl + `posts?per_page=${length}&offset=${offset}&_embed`
-        );
-        const json = await data.json();
-        console.log(json)
-
-        // Validate Buttons visibility
-        if (offset === 0) {
-            buttonPrevious.style.display = "none";
-        } else {
-            buttonPrevious.style.display = "block";
-        }
-        if (json.length < 3) {
-            buttonNext.style.display = "none";
-        } else {
-            buttonNext.style.display = "block";
-        }
-
-
-    } catch (error) {
-        console.log(error);
-    }
+//click right arrow and load three next posts
+const next = async () => {
+    page++
+    await fetchThreePosts()
 }
 
-buttonPrevious.addEventListener("click", () => {
-    if (offset >= 3) {
-        offset -= 3;
-    }
-    fetchApi(apiUrl);
-});
-buttonNext.addEventListener("click", () => {
-    offset += 3;
-    fetchApi(apiUrl);
-});
+arrowRight.addEventListener("click",next)
 
-fetchApi(apiUrl);
-*/
+
+//click left arrow and load three previous posts
+const previous = async () => {
+    page--
+    await fetchThreePosts()
+}
+
+arrowLeft.addEventListener("click",previous)
