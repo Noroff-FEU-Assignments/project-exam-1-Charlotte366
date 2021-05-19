@@ -333,8 +333,8 @@ footer {
 }
 
 .modal-modal img {
-  height: 800px;
-  width: 400px;
+  height: 60%;
+  width: 80%;
 }
 
 @media (max-width: 480px) {
