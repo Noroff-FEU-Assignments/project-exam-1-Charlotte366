@@ -347,7 +347,8 @@ footer {
     flex-wrap: wrap;
   }
 
-  .posts img {
+  .posts img,
+  .postimg img {
     height: 300px;
     width: 300px;
     border-radius: 8px;
