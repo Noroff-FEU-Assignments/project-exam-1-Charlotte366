@@ -20,7 +20,7 @@ header {
 }
 
 main {
-  background-color: #d4d4d2;
+  background-color: lightgrey;
 }
 
 .logo-text {
@@ -122,8 +122,7 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .carousel {
@@ -272,10 +271,11 @@ textarea {
 footer {
   height: 100px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-items: center;
   justify-content: space-between;
   background-color: lightgrey;
-  margin-bottom: -15px;
   border-top: darkgreen 4px solid;
 }
 
@@ -295,12 +295,25 @@ footer {
   margin-right: 20px;
 }
 
-.copyright {
+.twitter {
+  margin-right: 20px;
+}
+
+.copyright,
+.toTop,
+.face,
+.insta,
+.snap,
+.twitter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-left: 15px;
 }
 
 .postimg {
-  cursor: pointer;
+  cursor: zoom-in;
   display: flex;
   flex-direction: row;
   align-items: center;
