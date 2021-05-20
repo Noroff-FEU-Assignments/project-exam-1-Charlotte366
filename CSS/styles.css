@@ -367,7 +367,6 @@ footer {
   .LatestPosts {
     display: flex;
     flex-wrap: wrap;
-    max-width: 100%;
   }
 
   .footer {
@@ -386,12 +385,9 @@ footer {
     object-fit: cover;
   }
 
-  .LatestPosts {
-    width: 100%;
-  }
-
   .LatestPosts img {
     height: 200px;
+    width: 100px;
   }
 
   .container_contact {
