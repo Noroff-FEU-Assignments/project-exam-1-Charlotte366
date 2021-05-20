@@ -187,9 +187,9 @@ hr {
 button {
   background-color: green;
   border-radius: 8px;
-  color: #1c1c1c;
+  color: white;
   font-weight: bolder;
-  max-width: 80px;
+  max-width: 109px;
   margin-bottom: 15px;
 }
 
