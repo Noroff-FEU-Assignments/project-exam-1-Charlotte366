@@ -1,6 +1,6 @@
 let page = 1
 const resultsContainerBlog = document.querySelector(".containerblog");
-const ViewMoreButton = document.querySelector(".viewmore")
+const showMoreButton = document.querySelector(".showmore")
 
 
 async function fetchPosts(){
@@ -36,9 +36,9 @@ async function fetchPosts(){
         // More-button visibility
         //If page number is less than Total Pages, show button
         if (page >= TotalPages) {
-            ViewMoreButton.style.display = "none";
+            showMoreButton.style.display = "none";
         } else {
-            ViewMoreButton.style.display = "block";
+            showMoreButton.style.display = "block";
         }
 
 }
@@ -54,9 +54,9 @@ fetchPosts ();
 
 
 
-const viewMore = async () => {
+const showMore = async () => {
     page++
     await fetchPosts()
 }
 
-ViewMoreButton.addEventListener("click",viewMore)
+showMoreButton.addEventListener("click",showMore)
