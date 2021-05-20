@@ -385,12 +385,12 @@ footer {
     object-fit: cover;
   }
 
-  .LatestPosts img {
-    height: 200px;
+  .LatestPosts {
+    width: 100%;
   }
 
-  .carousel img {
-    width: 100%;
+  .LatestPosts img {
+    height: 200px;
   }
 
   .container_contact {
