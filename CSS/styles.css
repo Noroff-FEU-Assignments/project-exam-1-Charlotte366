@@ -152,7 +152,6 @@ hr {
   justify-content: space-between;
   width: 100%;
   position: absolute;
-  top: 220%;
   transform: translateY(-50%);
   font-size: 30px;
 }
