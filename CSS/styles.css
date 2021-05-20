@@ -272,7 +272,7 @@ textarea {
 
 .icons {
   display: flex;
-  align-items: center;
+  margin-left: 30px;
   font-size: 35px;
 }
 
