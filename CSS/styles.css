@@ -232,7 +232,7 @@ b:hover {
 }
 
 s:hover {
-  color: brown;
+  color: darkmagenta;
 }
 
 q:hover {
@@ -400,6 +400,7 @@ footer {
 
   .toTop {
     margin-left: 38%;
+    text-decoration: darkolivegreen;
   }
 
   .copyright {
