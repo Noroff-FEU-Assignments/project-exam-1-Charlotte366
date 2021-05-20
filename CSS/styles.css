@@ -435,6 +435,11 @@ footer {
     display: inline-block;
   }
 
+  .LatestPosts {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .hamburger-label {
     display: none;
   }
