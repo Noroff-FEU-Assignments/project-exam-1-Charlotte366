@@ -42,10 +42,6 @@ main {
   margin-top: -25px;
 }
 
-.headerimg {
-  border: 70px solid lightgrey;
-}
-
 .headerimg img {
   height: 500px;
   width: 100%;
