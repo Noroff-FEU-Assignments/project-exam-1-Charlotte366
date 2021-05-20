@@ -52,9 +52,9 @@ fetchPosts ();
 
 
 
-const showMore = async () => {
+async function showmore() {
     page++
     await fetchPosts()
-}
-
-showMoreButton.addEventListener("click",showMore)
+    }
+    
+    showMoreButton.addEventListener("click",showmore);
