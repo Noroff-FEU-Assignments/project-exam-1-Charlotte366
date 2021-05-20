@@ -377,10 +377,6 @@ footer {
     align-items: center;
   }
 
-  .toTop {
-    text-align: center;
-  }
-
   .posts img,
   .postimg img {
     height: 300px;
@@ -402,7 +398,8 @@ footer {
     margin-top: 10px;
   }
 
-  .toTop {
+  .toTop,
+  .copyright {
     margin-left: 25%;
   }
 
