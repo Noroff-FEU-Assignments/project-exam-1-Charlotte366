@@ -14,13 +14,11 @@ async function fetchPosts(){
     console.log(results);
     console.log("Total number of pages:" + TotalPages)
 
-    resultsContainerBlog.innerHTML ="";
-
     let html="";
 
 
     for (let i = 0; i < results.length; i++) {
-    html +=  `<div class="posts">
+    html =  `<div class="posts">
     <h2><a href="spesificblogpost.html?id=${results[i].id}"> ${results[i].title.rendered} </a></h2>
     <p>Date published:${results[i].date}</p>
     <div class = "content">
@@ -30,7 +28,7 @@ async function fetchPosts(){
 
                 `;
 
-    resultsContainerBlog.innerHTML = html;
+    resultsContainerBlog.innerHTML += html;
     }
 
         // More-button visibility
