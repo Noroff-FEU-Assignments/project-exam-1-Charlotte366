@@ -398,12 +398,12 @@ footer {
     margin-top: 10px;
   }
 
-  .toTop,
-  .copyright {
+  .toTop {
     margin-left: 25%;
   }
 
-  .icons {
+  .icons,
+  .copyright {
     font-size: 30px;
     margin-left: 15%;
   }
