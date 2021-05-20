@@ -123,14 +123,21 @@ hr {
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+  padding-bottom: 50px;
 }
 
-.carousel {
+.carousel,
+.copyright,
+.toTop,
+.face,
+.insta,
+.snap,
+.twitter {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 200px;
+  margin-left: 15px;
 }
 
 .carousel img {
@@ -147,10 +154,6 @@ hr {
   top: 220%;
   transform: translateY(-50%);
   font-size: 30px;
-}
-
-.arrowup {
-  font-size: 20px;
 }
 
 .posts {
@@ -268,21 +271,9 @@ textarea {
   padding: 1rem;
 }
 
-footer {
-  height: 100px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-items: center;
-  justify-content: space-between;
-  background-color: lightgrey;
-  border-top: darkgreen 4px solid;
-}
-
 .icons {
   display: flex;
   font-size: 35px;
-  margin-right: 7%;
 }
 
 .face {
@@ -297,19 +288,6 @@ footer {
 
 .twitter {
   margin-right: 20px;
-}
-
-.copyright,
-.toTop,
-.face,
-.insta,
-.snap,
-.twitter {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-left: 15px;
 }
 
 .postimg {
@@ -333,11 +311,11 @@ footer {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.image-1 img {
+.image-item img {
   height: 800px;
 }
 
-.modal-modal {
+.modal-container {
   margin: auto;
   display: block;
   position: absolute;
@@ -346,9 +324,33 @@ footer {
   transform: translate(-50%, -50%);
 }
 
-.modal-modal img {
+.modal-container img {
   height: 700px;
   width: 600px;
+}
+
+.copyright,
+.toTop,
+.face,
+.insta,
+.snap,
+.twitter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
+  background-color: lightgrey;
+  border-top: darkgreen 4px solid;
+  padding-top: 60px;
 }
 
 @media (max-width: 480px) {
@@ -359,6 +361,14 @@ footer {
   .LatestPosts {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .posts img,

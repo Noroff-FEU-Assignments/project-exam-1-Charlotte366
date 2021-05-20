@@ -45,8 +45,8 @@
 
 
         function onClick(element) {
-            document.getElementById("image-1").src = element.src;
-            document.getElementById("modal-1").style.display = "block";
+            document.getElementById("image-item").src = element.src;
+            document.getElementById("modal-item").style.display = "block";
           }
 
 
