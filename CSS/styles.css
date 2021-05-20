@@ -377,6 +377,10 @@ footer {
     align-items: center;
   }
 
+  .toTop {
+    text-align: center;
+  }
+
   .posts img,
   .postimg img {
     height: 300px;
