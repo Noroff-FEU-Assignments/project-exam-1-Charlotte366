@@ -240,7 +240,7 @@ q:hover {
 }
 
 img {
-  width: 400px;
+  max-width: 400px;
   height: 400px;
   justify-content: space-around;
   border-radius: 8px;
