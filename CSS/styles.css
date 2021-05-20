@@ -140,8 +140,8 @@ hr {
 }
 
 .carousel img {
-  height: 200px;
-  width: 300px;
+  height: 300px;
+  width: 200px;
   border-radius: 8px;
   object-fit: cover;
 }
