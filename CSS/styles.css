@@ -143,6 +143,7 @@ hr {
   height: 200px;
   width: 300px;
   border-radius: 8px;
+  object-fit: cover;
 }
 
 .arrows {
@@ -169,6 +170,11 @@ hr {
   align-items: center;
   justify-content: space-around;
   width: 100%;
+  object-fit: cover;
+}
+
+.content img {
+  object-fit: cover;
 }
 
 .showmore {
@@ -375,6 +381,7 @@ footer {
     height: 300px;
     width: 300px;
     border-radius: 8px;
+    object-fit: cover;
   }
 
   .LatestPosts img {
