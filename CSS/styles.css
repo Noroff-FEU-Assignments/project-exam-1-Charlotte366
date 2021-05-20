@@ -1,6 +1,7 @@
 html,
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -227,15 +228,15 @@ a:hover {
 }
 
 b:hover {
-  color: blue;
+  color: #4267b2;
 }
 
 s:hover {
-  color: darkmagenta;
+  color: #833ab4;
 }
 
 q:hover {
-  color: yellow;
+  color: #fffc00;
 }
 
 img {
