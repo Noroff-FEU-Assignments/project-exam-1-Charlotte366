@@ -380,14 +380,13 @@ footer {
   .posts img,
   .postimg img {
     height: 300px;
-    width: 300px;
+    width: 200px;
     border-radius: 8px;
     object-fit: cover;
   }
 
   .LatestPosts img {
     height: 200px;
-    width: 100px;
   }
 
   .container_contact {
