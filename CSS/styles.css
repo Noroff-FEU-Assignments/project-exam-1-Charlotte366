@@ -144,7 +144,6 @@ hr {
   width: 300px;
   border-radius: 8px;
   object-fit: cover;
-  width: 100%;
 }
 
 .arrows {
@@ -382,10 +381,6 @@ footer {
     width: 200px;
     border-radius: 8px;
     object-fit: cover;
-  }
-
-  .LatestPosts img {
-    height: 200px;
   }
 
   .container_contact {
