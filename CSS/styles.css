@@ -128,7 +128,6 @@ hr {
 
 .carousel,
 .copyright,
-.toTop,
 .face,
 .insta,
 .snap,
@@ -392,7 +391,7 @@ footer {
 
   .icons {
     font-size: 30px;
-    justify-content: center;
+    margin-left: 20px;
   }
 
   input {
