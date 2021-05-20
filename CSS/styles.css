@@ -367,6 +367,7 @@ footer {
   .LatestPosts {
     display: flex;
     flex-wrap: wrap;
+    max-width: 100%;
   }
 
   .footer {
@@ -433,7 +434,7 @@ footer {
   }
 
   img {
-    width: 300px;
+    width: 400px;
     height: 400px;
     justify-content: space-around;
     border-radius: 8px;
