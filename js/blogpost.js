@@ -3,6 +3,7 @@ const resultsContainerBlog = document.querySelector(".containerblog");
 const showMoreButton = document.querySelector(".showmore")
 
 
+
 async function fetchPosts(){
 
     try {
@@ -13,6 +14,7 @@ async function fetchPosts(){
     const TotalPages = await response.headers.get('X-WP-TotalPages');
     console.log(results);
     console.log("Total number of pages:" + TotalPages)
+  
 
     let html="";
 
