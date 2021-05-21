@@ -59,18 +59,20 @@ fetchThreePosts ();
 
 
 //click right arrow and load three next posts
-const next = async () => {
+async function next() {
     page++
     await fetchThreePosts()
-}
+    }
+    
+    arrowRight.addEventListener("click",next);
 
-arrowRight.addEventListener("click",next)
 
 
 //click left arrow and load three previous posts
-const previous = async () => {
+async function previous() {
     page--
     await fetchThreePosts()
-}
+    }
+    
+    arrowLeft.addEventListener("click",previous);
 
-arrowLeft.addEventListener("click",previous)
