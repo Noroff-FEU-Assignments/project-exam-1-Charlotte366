@@ -34,6 +34,9 @@
     - ${result.title.rendered}
     `;
 
+    document.title += 
+    `${result.title.rendered}`;
+
     postimg.innerHTML = `
     <img src= "${result._embedded["wp:featuredmedia"][0].source_url}" alt: ${result._embedded["wp:featuredmedia"][0].alt_text}" 
     onclick="ModalClick(this)">
