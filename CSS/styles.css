@@ -175,6 +175,10 @@ hr {
   object-fit: cover;
 }
 
+.content img {
+  object-fit: cover;
+}
+
 .showmore {
   display: flex;
   text-align: center;
@@ -389,7 +393,6 @@ footer {
     width: 300px;
     border-radius: 8px;
     object-fit: cover;
-    width: 100%;
   }
 
   .container_contact {
