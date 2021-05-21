@@ -36,7 +36,7 @@
 
     postimg.innerHTML = `
     <img src= "${result._embedded["wp:featuredmedia"][0].source_url}" alt: ${result._embedded["wp:featuredmedia"][0].alt_text}" 
-    onclick="onClick(this)">
+    onclick="ModalClick(this)">
     `;
 
     }
@@ -44,8 +44,8 @@
         getBlogpost();
 
 
-        function onClick(element) {
-            document.getElementById("image-item").src = element.src;
+        function ModalClick(image) {
+            document.getElementById("image-item").src = image.src;
             document.getElementById("modal-item").style.display = "block";
           }
 
