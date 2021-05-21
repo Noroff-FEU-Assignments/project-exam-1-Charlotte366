@@ -13,7 +13,35 @@ a {
 
 footer {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   background-color: lightgrey;
+}
+
+.copyright {
+  margin-left: 3%;
+}
+
+.toTop {
+  margin-right: 15%;
+}
+
+.icons {
+  display: flex;
+  font-size: 35px;
+  margin-right: 3%;
+}
+
+@media (max-width: 480px) {
+  .copyright,
+  .icons,
+  .toTop {
+    margin-left: 20%;
+  }
+
+  .icons {
+    font-size: 80px;
+    margin-left: 15%;
+  }
 }
