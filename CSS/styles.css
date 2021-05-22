@@ -287,9 +287,14 @@ textarea {
   padding: 1rem;
 }
 
+.copyright {
+  margin-left: 3%;
+}
+
 .icons {
   display: flex;
   font-size: 35px;
+  margin-right: 3%;
 }
 
 .face {
@@ -299,10 +304,6 @@ textarea {
   margin-right: 20px;
 }
 .snap {
-  margin-right: 20px;
-}
-
-.twitter {
   margin-right: 20px;
 }
 
@@ -361,11 +362,10 @@ footer {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-items: center;
   justify-content: space-between;
   background-color: lightgrey;
   border-top: darkgreen 4px solid;
-  padding-top: 60px;
+  padding-top: 10px;
 }
 
 @media (max-width: 480px) {
@@ -411,7 +411,7 @@ footer {
   }
 
   .toTop {
-    margin-left: 15%;
+    margin-left: 30%;
   }
 
   .copyright {
@@ -420,7 +420,7 @@ footer {
 
   .icons {
     font-size: 40px;
-    margin-left: 15%;
+    margin-left: 20%;
   }
 
   input {
