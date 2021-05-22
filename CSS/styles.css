@@ -391,7 +391,7 @@ footer {
     object-fit: cover;
   }
 
-  .contactimg img {
+  .contactimg {
     height: 400px;
     width: 100%;
     border-radius: 8px;
