@@ -395,6 +395,7 @@ footer {
     height: 300px;
     width: 400px;
     border-radius: 8px;
+    object-fit: cover;
   }
 
   .posts img,
