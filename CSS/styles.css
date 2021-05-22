@@ -394,8 +394,12 @@ footer {
   .contactimg {
     height: 300px;
     width: 300px;
-    border-radius: 15px;
+
     object-fit: cover;
+  }
+
+  .contactimg img {
+    border-radius: 15px;
   }
 
   .posts img,
