@@ -11,9 +11,15 @@ a {
   text-decoration: none;
 }
 
-p {
+p,
+h2,
+h3,
+h4,
+h5,
+h6 {
   max-width: 600px;
   margin: 0 auto;
+  color: #393939;
 }
 
 header {
@@ -30,7 +36,6 @@ main {
   font-size: large;
   margin-left: 10px;
   display: flex;
-  color: #1c1c1c;
 }
 
 .containerNav {
@@ -119,6 +124,10 @@ hr {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.welcome {
+  margin-bottom: 20px;
 }
 
 .LatestPosts {
