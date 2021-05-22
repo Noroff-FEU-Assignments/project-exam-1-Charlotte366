@@ -168,12 +168,6 @@ hr {
   align-items: center;
   justify-content: space-around;
   padding-bottom: 10%;
-  background-color: #67aded;
-  margin-right: 25%;
-  margin-left: 25%;
-  margin-bottom: 5%;
-  border-radius: 10px;
-  padding-bottom: 40px;
 }
 
 .content {
@@ -239,7 +233,7 @@ i:hover {
 }
 
 a:hover {
-  color: lightseagreen;
+  color: #67aded;
 }
 
 b:hover {
