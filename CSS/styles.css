@@ -213,8 +213,6 @@ button {
 }
 
 .containerForm {
-  background-color: #a5c9ff;
-  border-radius: 40px;
   width: 50%;
   margin: 1rem;
   padding: 1rem;
@@ -364,7 +362,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   background-color: lightgrey;
-  border-top: darkgreen 4px solid;
+  border-top: green 4px solid;
   padding-top: 10px;
 }
 
@@ -389,6 +387,13 @@ footer {
   .carousel img {
     height: 200px;
     width: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  .contactimg {
+    height: 400px;
+    width: 400px;
     border-radius: 8px;
     object-fit: cover;
   }
