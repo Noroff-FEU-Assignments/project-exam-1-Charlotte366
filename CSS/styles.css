@@ -213,6 +213,8 @@ button {
 }
 
 .containerForm {
+  background-color: #a5c9ff;
+  border-radius: 40px;
   width: 50%;
   margin: 1rem;
   padding: 1rem;
